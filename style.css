@@ -14,6 +14,13 @@
     background-color: rgb(255, 255, 255);
     overflow-y: auto;
   }
+
+  .category {
+    display: flex;
+    position: sticky;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 300px;
+  }
  /*
 nav {
     position: sticky;
@@ -92,7 +99,8 @@ nav {
           "box-3 box-4"
           "box-5 box-6"
           "box-7 box-8"
-          "box-9 box-10";
+          "box-9 box-10"
+;
         gap: 0.7em;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(9, 180px);
