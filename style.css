@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+  }
+ /*
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    color: #111;
+    text-decoration: none;
+    font-size: 28px;
+} */
+
+  .box {
+    background: linear-gradient(to top left, rgb(155, 155, 155), rgb(185, 185, 185));
+    border-radius: 0.5rem;
+    height: 100%;
+    transition: 0.3s ease;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 0px rgb(191, 191, 191);
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 300px);
+    gap: 1.5em;
+    width: 100vw;
+    height: 100vh;
+    padding: 1em;
+    
+    grid-template-areas:
+      "box-1 box-1 box-1"
+      "box-1 box-1 box-1"
+      "box-2 box-3 box-4"
+      "box-5 box-6 box-7"
+      "box-8 box-9 box-10";
+  }
+
+  @media (max-width: 56em) {
+    .grid-container {
+      grid-template-areas:
+        "box-1 box-1"
+        "box-1 box-1"
+        "box-2 box-3"
+        "box-4 box-5"
+        "box-6 box-7"
+        "box-8 box-9"
+        "box-10 box-10";
+      gap: 0.7em;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 220px);
+    }
+    }
+
+    @media (max-width: 42em) {
+      .grid-container {
+        grid-template-areas:
+          "box-1 box-1"
+          "box-1 box-1"
+          "box-2 box-2"
+          "box-3 box-4"
+          "box-5 box-6"
+          "box-7 box-8"
+          "box-9 box-10";
+        gap: 0.7em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 180px);
+      }
+    }
+    
+    @media (max-width: 28em) {
+      .grid-container {
+        grid-template-areas:
+          "box-1"
+          "box-2"
+          "box-3"
+          "box-4"
+          "box-5"
+          "box-6"
+          "box-7"
+          "box-8"
+          "box-9"
+          "box-10";
+        gap: 0.7em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 250px);
+      }
+    }
