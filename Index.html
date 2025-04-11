@@ -3,97 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Homepage</title>
 </head>
 <body>
-        <!-- Navbar -->
-    <!-- <nav>
-        <div class="logo">
-            <img src="#" alt="logo">
-            <h3>Webshop</h3>
-        </div>
-        <div class="dropdown">
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#clothes">Home</a></li>
-            <li><a href="#home">Login</a></li>
-            <li><a href="#tools">Register</a></li>
-            <li><a class="nav-button" href="#account">Account</a></li>
+    <header>
+      <div class="logo"><a href="index.html">Webshop</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-    </nav> 
-        <!-- In the navbar there will be:
-         Login link, Shopping cart, Register, Account, Logo (aka return to index)-->
-
-        
-        <!-- Specials as example deals
-        cover the header (20% of the 1024 x 544 screen)
-        Implement the kind of deals and add actual discount
-        --> 
-
-        <div class="category">
-            <ul class="categories">
-                <ul>
-                <input class="checkbox" id="typesort" type="checkbox" name="typesort" />
-                <label for="typesort">Lorem Ipsum</label>
-                </ul>
-                <ul>
-                <input class="checkbox" id="typesort" type="checkbox" name="typesort" />
-                <label for="typesort">Lorem Ipsum</label>
-                </ul>
-
-                <ul>
-                    <input class="checkbox" id="typesort" type="checkbox" name="typesort" />
-                    <label for="typesort">Lorem Ipsum</label>
-                    </ul>
-
-                    <ul>
-                        <input class="checkbox" id="typesort" type="checkbox" name="typesort" />
-                        <label for="typesort">Lorem Ipsum</label>
-                        </ul>
-
-                 <ul>
-                <input class="checkbox" id="typesort" type="checkbox" name="typesort" />
-                <label for="typesort">Lorem Ipsum</label>
-                </ul>
-
-               <ul>
-                <input class="checkbox" id="typesort" type="checkbox" name="typesort" />
-                <label for="typesort">Lorem Ipsum</label>
-                </ul>
-            </ul>
-
-
+      </nav>
+    </header>
+  
+    <div class="categories">
+      <div class="category">T-Shirts</div>
+      <div class="category">Hoodies</div>
+      <div class="category">Pants</div>
+      <div class="category">Shoes</div>
+      <div class="category">Accessories</div>
+    </div>
+  
+    <div class="cards-container">
+      <div class="card">
+        <img src="/img/Hoodie.png" alt="Hoodie">
+        <div class="card-content">
+          <h3>Hoodie</h3>
+          <p>Soft cotton with a clean look. Perfect for any outfit.</p>
+          <div class="price">€24.99</div>
         </div>
-        <div class="grid-container">
-
-            
-            <div class="box" style="grid-area: box-1;">
-
-            </div>
-            <div class="box" style="grid-area: box-2;">2</div>
-            <div class="box" style="grid-area: box-3;">3</div>
-            <div class="box" style="grid-area: box-4;">4</div>
-            <div class="box" style="grid-area: box-5;">5</div>
-            <div class="box" style="grid-area: box-6;">6</div>
-            <div class="box" style="grid-area: box-7;">7</div>
-            <div class="box" style="grid-area: box-8;">8</div>
-            <div class="box" style="grid-area: box-9;">9</div>
-            <div class="box" style="grid-area: box-10">10</div>
-          </div>
-          
-        <!-- Categories
-         Categories leads to new pages due multiple cards
-         As example: Pants, shirts, shorts accecoires. -->
-
-         <!-- footer -->
-
-
-
-
-
-    
-</body>
-
-</html>
+      </div>
+  
+      <div class="card">
+        <img src="/img/Animeshirt.png" alt="Animeshirt">
+        <div class="card-content">
+          <h3>Urban Hoodie</h3>
+          <p>Cozy and stylish hoodie for casual wear.</p>
+          <div class="price">€49.99</div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="/img/Animeshirt.png" alt="Hoodie">
+        <div class="card-content">
+          <h3>Slim Fit Jeans</h3>
+          <p>Trendy jeans with a slim fit and stretch fabric.</p>
+          <div class="price">€39.99</div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="/img/Hoodie.png" alt="Hoodie">
+        <div class="card-content">
+          <h3>Retro Sneakers</h3>
+          <p>Comfortable sneakers with a vintage touch.</p>
+          <div class="price">€59.99</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  
