@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #111;
+  background: linear-gradient(to bottom right, rgb(32, 27, 86), #000000);
   color: white;
   padding: 20px 40px;
   display: flex;
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f39c12;
+  color: #a2a2a2;
 }
 
 .categories {
@@ -53,6 +53,7 @@ nav ul li a:hover {
   margin: 30px 0;
   gap: 20px;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .category {
@@ -62,12 +63,20 @@ nav ul li a:hover {
   border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.3s;
+
+}
+
+.category a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .category:hover {
-  background-color: #000000;
-  color: white;
+  background-color: #fefefe;
+  color: rgb(255, 255, 255);
   border-color: #000000;
+  
+
 }
 
 .cards-container {
