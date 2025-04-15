@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webshop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+<?php
+require_once 'includes/header.php';
+
+$servername = "db";
+$username = "root";
+$password = "root";
+
+try {
+    $conn = new PDO("mysql:host=$servername;port=3306;dbname=webshop", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
+
+
+<header>
       <div class="logo"><a href="index.html">Webshop</a></div>
       <nav>
         <ul>
@@ -75,6 +83,8 @@
         </div>
       </div>
     </div>
-  </body>
-  </html>
-  
+
+
+<?php
+require_once 'includes/footer.php';
+?>
